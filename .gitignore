@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ambiente virtual
+.venv/
+
+# Arquivos do Pyenv (se estiver usando)
+.python-version
+
+# Arquivos de configuração específicos do editor/IDE
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos específicos do Uvicorn (opcional, caso não precise versionar)
+uvicorn.lock
+
+# Dependências do Poetry (se estiver usando)
+poetry.lock
