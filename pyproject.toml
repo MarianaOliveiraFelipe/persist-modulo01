@@ -8,3 +8,4 @@ dependencies = [
     "fastapi[standard]>=0.115.4",
     "ruff>=0.7.3",
 ]
+
