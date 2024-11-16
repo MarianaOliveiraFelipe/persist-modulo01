@@ -1,0 +1,101 @@
+[
+    {
+        "id": 3,
+        "nome": "Corrida",
+        "grupo_muscular": "cardiovascular",
+        "dificuldade": "média",
+        "series": 1,
+        "repeticoes": 1,
+        "descricao": "Corrida de 10km."
+    },
+    {
+        "id": 1,
+        "nome": "Polichinelo",
+        "grupo_muscular": "Cardiovascular",
+        "dificuldade": "fácil",
+        "series": 4,
+        "repeticoes": 15,
+        "descricao": "Movimentação corporal intensa"
+    },
+    {
+        "id": 2,
+        "nome": "Agachamentos",
+        "grupo_muscular": "Pernas",
+        "dificuldade": "Médio",
+        "series": 5,
+        "repeticoes": 10,
+        "descricao": "Agachamento livre com barra"
+    },
+    {
+        "id": 4,
+        "nome": "Flexão",
+        "grupo_muscular": "Peito",
+        "dificuldade": "Médio",
+        "series": 4,
+        "repeticoes": 15,
+        "descricao": "Usar força para empurrar os braços contra o chão"
+    },
+    {
+        "id": 5,
+        "nome": "Hack",
+        "grupo_muscular": "Pernas",
+        "dificuldade": "Difícil",
+        "series": 4,
+        "repeticoes": 10,
+        "descricao": "Agachamento em máquina de apoio"
+    },
+    {
+        "id": 6,
+        "nome": "Rosca martelo",
+        "grupo_muscular": "Bíceps",
+        "dificuldade": "Fácil",
+        "series": 4,
+        "repeticoes": 10,
+        "descricao": "Levantar o antebraço formando um angulo de 90 graus com halteres"
+    },
+    {
+        "id": 8,
+        "nome": "Bicicleta",
+        "grupo_muscular": "Cardiovascular",
+        "dificuldade": "Médio",
+        "series": 1,
+        "repeticoes": 15,
+        "descricao": "Pedaladas em bicicleta estética"
+    },
+    {
+        "id": 10,
+        "nome": "Pulldown",
+        "grupo_muscular": "Costas",
+        "dificuldade": "Fácil",
+        "series": 4,
+        "repeticoes": 12,
+        "descricao": "Puxada alta"
+    },
+    {
+        "id": 11,
+        "nome": "Remada baixa",
+        "grupo_muscular": "Costas",
+        "dificuldade": "Fácil",
+        "series": 12,
+        "repeticoes": 4,
+        "descricao": "Puxada frontal"
+    },
+    {
+        "id": 12,
+        "nome": "Supino inclinado",
+        "grupo_muscular": "Peito",
+        "dificuldade": "Médio",
+        "series": 4,
+        "repeticoes": 10,
+        "descricao": "Levantamento de halteres em banco levemente inclinado"
+    },
+    {
+        "id": 7,
+        "nome": "Abdominais",
+        "grupo_muscular": "Abome",
+        "dificuldade": "Difícil",
+        "series": 5,
+        "repeticoes": 10,
+        "descricao": "Inclinar o tronco repetidamente"
+    }
+]

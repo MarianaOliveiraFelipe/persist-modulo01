@@ -1,2 +1,12 @@
 id,nome,grupo_muscular,dificuldade,series,repeticoes,descricao
-3,Corrida,cardiovascular,média,1,1000,Corrida de 10km.
+3,Corrida,cardiovascular,média,1,1,Corrida de 10km.
+1,Polichinelo,Cardiovascular,fácil,4,15,Movimentação corporal intensa
+2,Agachamentos,Pernas,Médio,5,10,Agachamento livre com barra
+4,Flexão,Peito,Médio,4,15,Usar força para empurrar os braços contra o chão
+5,Hack,Pernas,Difícil,4,10,Agachamento em máquina de apoio
+6,Rosca martelo,Bíceps,Fácil,4,10,Levantar o antebraço formando um angulo de 90 graus com halteres
+8,Bicicleta,Cardiovascular,Médio,1,15,Pedaladas em bicicleta estética
+10,Pulldown,Costas,Fácil,4,12,Puxada alta
+11,Remada baixa,Costas,Fácil,12,4,Puxada frontal
+12,Supino inclinado,Peito,Médio,4,10,Levantamento de halteres em banco levemente inclinado
+7,Abdominais,Abome,Difícil,5,10,Inclinar o tronco repetidamente
