@@ -97,5 +97,14 @@
         "series": 5,
         "repeticoes": 10,
         "descricao": "Inclinar o tronco repetidamente"
+    },
+    {
+        "id": 13,
+        "nome": "Stiff",
+        "grupo_muscular": "Posteriores",
+        "dificuldade": "Difícil",
+        "series": 4,
+        "repeticoes": 12,
+        "descricao": "Inclinação com halteres tendo ênfase em posterior de coxa"
     }
 ]

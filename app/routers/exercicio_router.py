@@ -3,7 +3,7 @@ from fastapi.responses import FileResponse
 from app.models.exercicio import Exercicio
 from app.services.loading import carregar_exercicios
 from app.services.manipulation import adicionar_exercicio, atualizar_exercicio, remover_exercicio
-from app.services.convertion import csv_para_zip, csv_para_json
+from app.services.convertion import csv_para_zip, csv_para_json, calcular_hash
 from http import HTTPStatus
 
 router = APIRouter()
@@ -55,3 +55,13 @@ def compactar_exercicios():
         return FileResponse(zip_filename, media_type='application/zip', filename=zip_filename)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Erro ao compactar arquivo: {str(e)}")
+    
+# Calcular hash de exercícios.csv
+@router.get("/exercicios/hash/")
+def get_csv_hash():
+    try:
+        csv_file = "exercicios.csv"
+        hash_sha256 = calcular_hash(csv_file)
+        return {"sha256_hash": hash_sha256}
+    except Exception as e:
+        raise HTTPException(status_code=HTTPStatus.INTERNAL_SERVER_ERROR, detail=str(e))

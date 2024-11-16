@@ -1,6 +1,7 @@
 from app.services.loading import carregar_exercicios
 import json
 import zipfile
+import hashlib
 
 exercicios_file = "exercicios.csv"
 
@@ -24,3 +25,12 @@ def csv_para_zip(csv_file: str) -> str:
         return zip_filename
     except Exception as e:
         raise Exception(f"Erro ao compactar arquivo CSV: {str(e)}")
+    
+def calcular_hash(csv_file: str) -> str:
+    try:
+        with open(csv_file, 'rb') as f:
+            file_data = f.read()
+            sha256_hash = hashlib.sha256(file_data).hexdigest()
+        return sha256_hash
+    except Exception as e:
+        raise Exception(f"Erro ao calcular hash do arquivo: {str(e)}")
