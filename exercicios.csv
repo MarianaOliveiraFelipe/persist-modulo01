@@ -1,7 +1,7 @@
 id,nome,grupo_muscular,dificuldade,series,repeticoes,descricao
-3,Corrida,cardiovascular,média,1,1,Corrida de 10km.
 1,Polichinelo,Cardiovascular,fácil,4,15,Movimentação corporal intensa
 2,Agachamentos,Pernas,Médio,5,10,Agachamento livre com barra
+3,Corrida,cardiovascular,média,1,1,Corrida de 10km.
 4,Flexão,Peito,Médio,4,15,Usar força para empurrar os braços contra o chão
 5,Hack,Pernas,Difícil,4,10,Agachamento em máquina de apoio
 6,Rosca martelo,Bíceps,Fácil,4,10,Levantar o antebraço formando um angulo de 90 graus com halteres

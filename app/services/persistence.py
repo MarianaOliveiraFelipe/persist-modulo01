@@ -1,7 +1,9 @@
 import csv
 from app.models.exercicio import Exercicio
 
+
 exercicios_file = "exercicios.csv"
+
 
 def salvar_exercicios(exercicios: list[Exercicio]):
     with open(exercicios_file, mode="w", newline='', encoding="utf-8") as f:

@@ -4,7 +4,9 @@ from app.models.exercicio import Exercicio
 from app.services.persistence import salvar_exercicios
 from app.services.loading import carregar_exercicios
 
+
 exercicios = carregar_exercicios()
+
 
 def adicionar_exercicio(exercicio: Exercicio) -> Exercicio:
     if any(e.id == exercicio.id for e in exercicios):
@@ -12,6 +14,7 @@ def adicionar_exercicio(exercicio: Exercicio) -> Exercicio:
     exercicios.append(exercicio)
     salvar_exercicios(exercicios)
     return exercicio
+
 
 def atualizar_exercicio(exercicio_id: int, exercicio_atualizado: Exercicio) -> Exercicio:
     for indice, exercicio in enumerate(exercicios):
@@ -21,6 +24,7 @@ def atualizar_exercicio(exercicio_id: int, exercicio_atualizado: Exercicio) -> E
             return exercicio_atualizado
     raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail="Exercício não encontrado.")
 
+
 def remover_exercicio(exercicio_id: int):
     for exercicio in exercicios:
         if exercicio.id == exercicio_id:
@@ -28,3 +32,7 @@ def remover_exercicio(exercicio_id: int):
             salvar_exercicios(exercicios)
             return {"msg": "Exercício removido com sucesso!"}
     raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail="Exercício não encontrado.")
+
+
+def quantidade_exercicios() -> int:
+    return len(exercicios)

@@ -3,7 +3,9 @@ import json
 import zipfile
 import hashlib
 
+
 exercicios_file = "exercicios.csv"
+
 
 def csv_para_json() -> str:
     exercicios = carregar_exercicios()
@@ -17,6 +19,7 @@ def csv_para_json() -> str:
     except Exception as e:
         raise Exception(f"Erro ao converter CSV para JSON: {str(e)}")
 
+
 def csv_para_zip(csv_file: str) -> str:
     zip_filename = csv_file.replace(".csv", ".zip")
     try:
@@ -25,6 +28,7 @@ def csv_para_zip(csv_file: str) -> str:
         return zip_filename
     except Exception as e:
         raise Exception(f"Erro ao compactar arquivo CSV: {str(e)}")
+
     
 def calcular_hash(csv_file: str) -> str:
     try:

@@ -1,7 +1,9 @@
 import csv
 from app.models.exercicio import Exercicio
 
+
 exercicios_file = "exercicios.csv"
+
 
 def carregar_exercicios() -> list[Exercicio]:
     exercicios = []
