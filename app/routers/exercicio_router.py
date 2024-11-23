@@ -2,7 +2,11 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import FileResponse
 from app.models.exercicio import Exercicio
 from app.services.loading import carregar_exercicios
-from app.services.manipulation import adicionar_exercicio, atualizar_exercicio, remover_exercicio
+from app.services.manipulation import (
+    adicionar_exercicio,
+    atualizar_exercicio,
+    remover_exercicio,
+)
 from app.services.convertion import csv_para_zip, csv_para_json, calcular_hash
 from http import HTTPStatus
 
@@ -24,7 +28,9 @@ def ler_exercicio(exercicio_id: int) -> Exercicio:
     for exercicio in exercicios:
         if exercicio.id == exercicio_id:
             return exercicio
-    raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail="Exercício não encontrado.")
+    raise HTTPException(
+        status_code=HTTPStatus.NOT_FOUND, detail="Exercício não encontrado."
+    )
 
 
 # Post de novo exercício
@@ -50,9 +56,13 @@ def remover_exercicio_endpoint(exercicio_id: int):
 def converter_exercicios():
     try:
         json_filename = csv_para_json()
-        return FileResponse(json_filename, media_type='application/json', filename=json_filename)
+        return FileResponse(
+            json_filename, media_type="application/json", filename=json_filename
+        )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro ao converter arquivo: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Erro ao converter arquivo: {str(e)}"
+        )
 
 
 # Compactar exercícios.csv
@@ -60,9 +70,13 @@ def converter_exercicios():
 def compactar_exercicios():
     try:
         zip_filename = csv_para_zip("exercicios.csv")
-        return FileResponse(zip_filename, media_type='application/zip', filename=zip_filename)
+        return FileResponse(
+            zip_filename, media_type="application/zip", filename=zip_filename
+        )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Erro ao compactar arquivo: {str(e)}")
+        raise HTTPException(
+            status_code=500, detail=f"Erro ao compactar arquivo: {str(e)}"
+        )
 
 
 # Calcular hash de exercícios.csv
@@ -81,6 +95,9 @@ def get_csv_hash():
 def quantidade_exercicios():
     try:
         exercicios = carregar_exercicios()
-        return {"quantidade": len(exercicios)}  
+        return {"quantidade": len(exercicios)}
     except Exception as e:
-        raise HTTPException(status_code=HTTPStatus.INTERNAL_SERVER_ERROR, detail=f"Erro ao calcular quantidade: {str(e)}")
+        raise HTTPException(
+            status_code=HTTPStatus.INTERNAL_SERVER_ERROR,
+            detail=f"Erro ao calcular quantidade: {str(e)}",
+        )

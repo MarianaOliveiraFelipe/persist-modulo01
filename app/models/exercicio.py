@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class Exercicio(BaseModel):
     id: int
     nome: str

@@ -1,14 +1,5 @@
 [
     {
-        "id": 3,
-        "nome": "Corrida",
-        "grupo_muscular": "cardiovascular",
-        "dificuldade": "média",
-        "series": 1,
-        "repeticoes": 1,
-        "descricao": "Corrida de 10km."
-    },
-    {
         "id": 1,
         "nome": "Polichinelo",
         "grupo_muscular": "Cardiovascular",
@@ -25,6 +16,15 @@
         "series": 5,
         "repeticoes": 10,
         "descricao": "Agachamento livre com barra"
+    },
+    {
+        "id": 3,
+        "nome": "Corrida",
+        "grupo_muscular": "cardiovascular",
+        "dificuldade": "média",
+        "series": 1,
+        "repeticoes": 1,
+        "descricao": "Corrida de 10km."
     },
     {
         "id": 4,
@@ -54,7 +54,7 @@
         "descricao": "Levantar o antebraço formando um angulo de 90 graus com halteres"
     },
     {
-        "id": 8,
+        "id": 7,
         "nome": "Bicicleta",
         "grupo_muscular": "Cardiovascular",
         "dificuldade": "Médio",
@@ -63,7 +63,7 @@
         "descricao": "Pedaladas em bicicleta estética"
     },
     {
-        "id": 10,
+        "id": 8,
         "nome": "Pulldown",
         "grupo_muscular": "Costas",
         "dificuldade": "Fácil",
@@ -72,7 +72,7 @@
         "descricao": "Puxada alta"
     },
     {
-        "id": 11,
+        "id": 9,
         "nome": "Remada baixa",
         "grupo_muscular": "Costas",
         "dificuldade": "Fácil",
@@ -81,7 +81,7 @@
         "descricao": "Puxada frontal"
     },
     {
-        "id": 12,
+        "id": 10,
         "nome": "Supino inclinado",
         "grupo_muscular": "Peito",
         "dificuldade": "Médio",
@@ -90,7 +90,7 @@
         "descricao": "Levantamento de halteres em banco levemente inclinado"
     },
     {
-        "id": 7,
+        "id": 11,
         "nome": "Abdominais",
         "grupo_muscular": "Abome",
         "dificuldade": "Difícil",
@@ -99,12 +99,39 @@
         "descricao": "Inclinar o tronco repetidamente"
     },
     {
-        "id": 13,
+        "id": 12,
         "nome": "Stiff",
         "grupo_muscular": "Posteriores",
         "dificuldade": "Difícil",
         "series": 4,
         "repeticoes": 12,
         "descricao": "Inclinação com halteres tendo ênfase em posterior de coxa"
+    },
+    {
+        "id": 13,
+        "nome": "Leg press",
+        "grupo_muscular": "Pernas",
+        "dificuldade": "Médio",
+        "series": 4,
+        "repeticoes": 12,
+        "descricao": "Pressão de pernas em máquina"
+    },
+    {
+        "id": 14,
+        "nome": "Desenvolvimento",
+        "grupo_muscular": "ombros",
+        "dificuldade": "Médio",
+        "series": 4,
+        "repeticoes": 12,
+        "descricao": "Levantamento de halteres acima da cabeça"
+    },
+    {
+        "id": 15,
+        "nome": "Tríceps testa",
+        "grupo_muscular": "Tríceps",
+        "dificuldade": "Médio",
+        "series": 12,
+        "repeticoes": 3,
+        "descricao": "Levantamento de halteres com o tríceps acima da cabeça"
     }
 ]

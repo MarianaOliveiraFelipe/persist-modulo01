@@ -1,0 +1,11 @@
+A entidade foi discutida e definida pela dupla em conjunto.
+
+Mariana foi responsável pela criação dos endpoints do projeto e pelas funcionalidades:
+- F1;
+- F3;
+- F4.
+
+Yagho foi responsável pela organização das pastas e arquivos do projeto e pelas funcionalidades:
+- F2;
+- F5;
+- F6.
